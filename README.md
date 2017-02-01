@@ -9,7 +9,7 @@ A simple Xamarin app named *Acquaint*. The app is a simple list of contacts, eac
 |-----------------------|------------------------------------------------------------------------------------------------------------|
 | Acquaint.XForms.Droid | <img src="https://devops-mobile.visualstudio.com/_apis/public/build/definitions/7e091af6-0350-49cc-aee7-453edbd72186/3/badge" /> |
 | Acquaint.XForms.iOS   | <img src="https://devops-mobile.visualstudio.com/_apis/public/build/definitions/7e091af6-0350-49cc-aee7-453edbd72186/4/badge" /> |
-| Acquaint.XForms.UWP   | <img src="https://josau.visualstudio.com/_apis/public/build/definitions/ff9dfce3-f143-428a-9694-2fa649920fc5/5/badge" /> |
+| Acquaint.XForms.UWP   | <img src="https://devops-mobile.visualstudio.com/_apis/public/build/definitions/7e091af6-0350-49cc-aee7-453edbd72186/18/badge" /> |
 | Acquaint.Native.Droid | <img src="https://devops-mobile.visualstudio.com/_apis/public/build/definitions/7e091af6-0350-49cc-aee7-453edbd72186/2/badge" /> |
 | Acquaint.Native.iOS   | <img src="https://devops-mobile.visualstudio.com/_apis/public/build/definitions/7e091af6-0350-49cc-aee7-453edbd72186/1/badge" /> |
 
