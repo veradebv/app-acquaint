@@ -17,10 +17,6 @@ namespace Acquaint.XForms
 				DataPartitionPhraseEntry.PlaceholderColor = Color.Red;
 				DataPartitionPhraseEntry.Focus();
 			});
-
-			MessagingService.Current.Subscribe(MessageKeys.BackendUrlValidation, (service) => {
-				BackendServiceUrlEntry.PlaceholderColor = Color.Red;
-			});
 		}
 	}
 }

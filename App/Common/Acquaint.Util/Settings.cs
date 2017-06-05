@@ -40,20 +40,11 @@ namespace Acquaint.Util
 
 		#region user-configurable
 
-		private const string AzureAppServiceUrlKey = "AzureAppServiceUrl_key";
-		private static readonly string AzureAppServiceUrlDefault = "https://app-acquaint.azurewebsites.net";
-
 		private const string DataPartitionPhraseKey = "DataPartitionPhrase_key";
 		private static readonly string DataSeedPhraseDefault = "";
 
 		private const string ImageCacheDurationHoursKey = "ImageCacheDurationHours_key";
 		public static readonly int ImageCacheDurationHoursDefault = 1;
-
-		public static string AzureAppServiceUrl
-		{
-			get { return AppSettings.GetValueOrDefault<string>(AzureAppServiceUrlKey, AzureAppServiceUrlDefault); }
-			set { AppSettings.AddOrUpdateValue<string>(AzureAppServiceUrlKey, value); }
-		}
 
 		public static string DataPartitionPhrase
 		{
@@ -71,12 +62,15 @@ namespace Acquaint.Util
 			set { AppSettings.AddOrUpdateValue<int>(ImageCacheDurationHoursKey, value); }
 		}
 
-		#endregion
+        #endregion
 
 
-		#region non-user-configurable
+        #region non-user-configurable
 
-		private const string DataIsSeededKey = "DataIsSeeded_key";
+        private const string AzureAppServiceUrlKey = "AzureAppServiceUrl_key";
+        private static readonly string AzureAppServiceUrlDefault = "http://dompetvct.azurewebsites.net";
+
+        private const string DataIsSeededKey = "DataIsSeeded_key";
 		private static readonly bool DataIsSeededDefault = false;
 
 		private const string LocalDataResetIsRequestedKey = "LocalDataResetIsRequested_key";
@@ -91,7 +85,13 @@ namespace Acquaint.Util
         private const string BingMapsKeyKey = "BingMapsKey_key";
         private static readonly string BingMapsKeyDefault = "UW0peICp3gljJyhqQKFZ~R3XF1I5BvWmWmkD4ujytTA~AoUOqpk2nJB-Wh7wH-9S-zaG-w6sygLitXugNOqm71wx_nc6WHIt6Lb29gyTU04X";
 
-		public static bool LocalDataResetIsRequested
+        public static string AzureAppServiceUrl
+        {
+            get { return AppSettings.GetValueOrDefault<string>(AzureAppServiceUrlKey, AzureAppServiceUrlDefault); }
+            set { AppSettings.AddOrUpdateValue<string>(AzureAppServiceUrlKey, value); }
+        }
+
+        public static bool LocalDataResetIsRequested
 		{
 			get { return AppSettings.GetValueOrDefault<bool>(LocalDataResetIsRequestedKey, LocalDataResetIsRequestedDefault); }
 			set { AppSettings.AddOrUpdateValue<bool>(LocalDataResetIsRequestedKey, value); }

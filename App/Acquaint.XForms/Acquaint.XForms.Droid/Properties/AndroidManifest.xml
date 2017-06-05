@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.xamarin.acquaintforms" android:versionCode="151" android:versionName="1.51">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.vct.acquaintforms" android:versionCode="151" android:versionName="1.51" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="17" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -9,9 +9,9 @@
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	<uses-permission android:name="android.permission.READ_LOGS" />
-	<application android:label="Acquaint XF" android:theme="@style/AcquaintTheme">
+	<application android:label="Acquaint" android:theme="@style/AcquaintTheme">
 		<!-- Put your Google Maps V2 API Key here. -->
-		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB9kZU_zfTpbAV9MPb1GSCJeF93yAElvw4" />
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCXxDipxdb-8_sw8O12qm6TFcyWj92JgUI" />
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 	</application>
 </manifest>

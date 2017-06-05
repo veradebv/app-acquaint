@@ -26,7 +26,7 @@
 						<TableSection Title="Address">
 							<EntryCell Label="Street" Text="{Binding Acquaintance.Street}" Keyboard="Text" />
 							<EntryCell Label="City" Text="{Binding Acquaintance.City}" Keyboard="Text" />
-							<EntryCell Label="State" Text="{Binding Acquaintance.State}" Keyboard="Text" PropertyChanged="StateEntry_PropertyChanged" />
+							<EntryCell Label="State" Text="{Binding Acquaintance.State}" Keyboard="Text" />
 							<EntryCell Label="ZIP" Text="{Binding Acquaintance.PostalCode}" Keyboard="Numeric" PropertyChanged="PostalCode_PropertyChanged" />
 						</TableSection>
 					</TableRoot>
