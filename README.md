@@ -4,12 +4,14 @@ This is a fork from a prebuilt simple Xamarin app *Acquaint* featured on [Xamari
 
 <img src="https://github.com/xamarinhq/app-acquaint/blob/master/Screenshots/AllScreens_AllPlatforms.jpg" />
 
-##Cross-platform and native
+## Cross-platform and native
+
 The app is implemented in two ways in order to demonstrate the two different approaches to Xamarin app development:
 * Xamarin.Forms cross-platform UI
 * Xamarin native, with platform-specific UI implementations
 
-##Platforms
+## Platforms
+
 The app targets three platforms:
 * iOS
    * Native and Forms version
@@ -18,12 +20,20 @@ The app targets three platforms:
 * Universal Windows Platform (UWP)
     * Forms version only
     
-##Integrations
+## Integrations
+
 Includes integrations available on the detail such as:
 * getting directions
 * making calls
 * sending text messages
 * email composition
+
+## Screens
+
+The app has three main screens:
+* a list screen
+* a read-only detail screen
+* an editable detail screen
 
 ## Prequisites
 * [Visual Studio](https://www.visualstudio.com/) (14.0 or higher) to compile C# 6 langage features (or Visual Studio for Mac)
@@ -53,13 +63,6 @@ https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-wind
 | 3D Touch Previewing (iOS) | Shared View Transitions (Android) |
 | --- | --- |
 | <img src="https://github.com/xamarinhq/app-acquaint/blob/master/Screenshots/Acquaint_N_3DTouch.gif" width="300" /> | <img src="https://github.com/xamarinhq/app-acquaint/blob/master/Screenshots/Acquaint_N_SharedViewTransitions.gif" width="300" /> |
-
-## Screens
-
-The app has three main screens:
-* a list screen
-* a read-only detail screen
-* an editable detail screen
 
 ## People
 
