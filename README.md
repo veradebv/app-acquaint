@@ -1,44 +1,33 @@
 # Acquaint
 
-A simple Xamarin app named *Acquaint*. The app is a simple list of contacts, each of which can be viewed in a detail screen and modified in an edit screen. It runs on iOS 9+, Android 4.2+, and UWP (mobile and desktop).
+This is a fork from a prebuilt simple Xamarin app named *Acquaint* featured on [Xamarin's Website](https://www.xamarin.com/prebuilt). The app is a simple list of contacts, each of which can be viewed in a detail screen and modified in an edit screen. It runs on iOS 9+, Android 4.2+, and UWP (mobile and desktop).
 
 <img src="https://github.com/xamarinhq/app-acquaint/blob/master/Screenshots/AllScreens_AllPlatforms.jpg" />
-
-<!-- 
-##Build Status
-| Project               | master branch                                                                                              |
-|-----------------------|------------------------------------------------------------------------------------------------------------|
-| Acquaint.XForms.Droid | <img src="https://devops-mobile.visualstudio.com/_apis/public/build/definitions/7e091af6-0350-49cc-aee7-453edbd72186/3/badge" /> |
-| Acquaint.XForms.iOS   | <img src="https://devops-mobile.visualstudio.com/_apis/public/build/definitions/7e091af6-0350-49cc-aee7-453edbd72186/4/badge" /> |
-| Acquaint.XForms.UWP   | <img src="https://devops-mobile.visualstudio.com/_apis/public/build/definitions/7e091af6-0350-49cc-aee7-453edbd72186/18/badge" /> |
-| Acquaint.Native.Droid | <img src="https://devops-mobile.visualstudio.com/_apis/public/build/definitions/7e091af6-0350-49cc-aee7-453edbd72186/2/badge" /> |
-| Acquaint.Native.iOS   | <img src="https://devops-mobile.visualstudio.com/_apis/public/build/definitions/7e091af6-0350-49cc-aee7-453edbd72186/1/badge" /> |
--->
 
 ##Cross-platform and native
 The app is implemented in two ways in order to demonstrate the two different approaches to Xamarin app development:
 * Xamarin.Forms cross-platform UI
 * Xamarin native, with platform-specific UI implementations
 
-##Three platforms
+##Platforms
 The app targets three platforms:
 * iOS
+   * Native and Forms version
 * Android
+   * Native and Forms version
 * Universal Windows Platform (UWP)
-    * UWP currently only in Forms version of app
-    * UWP supported only in Visual Studio, not Xamarin Studio
+    * Forms version only
     
 ##Integrations
-Includes integrations such as:
+Includes integrations available on the detail such as:
 * getting directions
 * making calls
 * sending text messages
 * email composition
 
-## Requirements
-* [Visual Studio __2015__](https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx) (14.0 or higher) to compile C# 6 langage features (or Xamarin Studio OS X)
-* Xamarin add-ons for Visual Studio (available via the Visual Studio installer)
-* __Visual Studio Community Edition is fully supported!__
+## Prequisites
+* [Visual Studio](https://www.visualstudio.com/) (14.0 or higher) to compile C# 6 langage features (or Visual Studio for Mac)
+* Xamarin and UWP add-ons and components for Visual Studio (available via the Visual Studio installer)
 
 ## Google Maps API key (Android)
 For Android, you'll need to obtain a Google Maps API key:
@@ -65,7 +54,6 @@ https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-wind
 | --- | --- |
 | <img src="https://github.com/xamarinhq/app-acquaint/blob/master/Screenshots/Acquaint_N_3DTouch.gif" width="300" /> | <img src="https://github.com/xamarinhq/app-acquaint/blob/master/Screenshots/Acquaint_N_SharedViewTransitions.gif" width="300" /> |
 
-
 ## Screens
 
 The app has three main screens:
@@ -77,5 +65,13 @@ The app has three main screens:
 
 All images of people in the app come from [UIFaces.com](http://uifaces.com/authorized). In accordance with the guidelines, fictitious names have been provided. 
 
-## Clean and Rebuild
-If you see build issues when pulling updates from the repo, try cleaning and rebuilding the solution.
+## Troubleshooting
+If you encountered "XamlCTask" task could not be initialized with its input parameters, you can try to:
+* Updating NuGet Packages and rebuild solution
+* Remove all "bin" and "obj" folders and rebuild solution
+
+If there are missing dependencies, you could try to:
+* Open NuGet Package Manager for each Projects and let it download missing dependencies by itself
+* Open NuGet Package Manager and retrieve missing dependencies manually
+
+If anything else, you could always try to close all instances of Visual Studio and then restart your Visual Studio.
